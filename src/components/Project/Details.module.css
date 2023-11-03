@@ -1,0 +1,83 @@
+.project {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding-top: 40px;
+}
+
+.project>div {
+  width: 45%;
+}
+
+.images {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.current {
+  width: 100%;
+  /* min-height: 60%; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.images_list {
+  display: flex;
+  gap: 5px;
+}
+
+.images_list div {
+  width: 24%;
+}
+
+.image {
+  width: 100%;
+  height: 90px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 25px;
+}
+
+.github {
+  background-color: var(--grey-color);
+  color: var(--white);
+}
+
+.year {
+  width: max-content;
+  padding: 3px 10px;
+  background-color: var(--accent-color);
+  border-radius: 30px;
+}
+
+.main > *:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 960px) {
+  .project {
+    flex-direction: column;
+    align-items: center;
+  }
+  .project>div {
+    width: 70%;
+  }
+  /* .buttons {
+    justify-content: center;
+  } */
+}
+
+@media (max-width: 690px) {
+  .project>div {
+    width: 100%;
+  }
+}

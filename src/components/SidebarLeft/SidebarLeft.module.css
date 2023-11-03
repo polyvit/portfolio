@@ -1,0 +1,128 @@
+.sidebar {
+  background-color: var(--color-item-bg);
+  height: min-content;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: center;
+  padding: 50px 45px;
+}
+
+.avatar {
+  height: 150px;
+  width: 150px;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.desc {
+  text-align: center;
+}
+
+.name {
+  color: var(--color-title);
+  font-size: 18px;
+}
+
+.media {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.media_link {
+  width: 30px;
+  height: 30px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.media_link a {
+  height: 60%;
+}
+
+.media_link svg {
+  height: 15px;
+  width: 15px;
+  fill: black;
+}
+
+.info_item {
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-title);
+  margin-bottom: 9px;
+}
+.cont {
+  width: max-content;
+}
+.left {
+  width: 100%;
+  padding: 8px;
+  background-color: var(--accent-color);
+  animation-name: left;
+  animation-duration: 3s;
+}
+  
+@keyframes left {
+  from {
+    width: 0;
+  }
+}
+
+.right {
+  margin-top: 8px;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 9px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom {
+  border: 1px solid var(--accent-color);
+  height: 8px;
+  border-radius: 30px;
+  padding: 1px 1px;
+}
+
+.progress {
+  background-color: var(--accent-color);
+  border-radius: 30px;
+  height: 3.5px;
+  animation-name: progressbar;
+  animation-duration: 3s;
+}
+@keyframes progressbar {
+  from {
+    width: 0;
+  }
+}
+
+.language-bottom__inside_eng {
+  width: 90%;
+}
+
+.language-bottom__inside_ch {
+  width: 30%;
+}
+
+.skillgroup {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+/* .skill-group__icon {
+  margin-top: 3px;
+} */

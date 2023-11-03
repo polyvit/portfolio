@@ -1,0 +1,436 @@
+{
+	 "person": {
+      "name": "Полина Лимонова",
+      "birthday": "1998-5-17",
+      "country": "Россия",
+      "role": "Junior Frontend Developer",
+      "avatar": "https://i.ibb.co/mXr4TM9/73.jpg",
+      "banner": "https://i.ibb.co/Nprfb8C/Group-47-2.png",
+      "languages": [
+        {"name": "Русский", "level": "Native", "progress": "100%"}, 
+        {"name": "Английский", "level": "А1", "progress": "90%"}, 
+        {"name": "Китайский", "level": "A2", "progress": "30%"}
+      ],
+      "skills": [
+        "HTML5, CSS3", 
+        "SCSS/SASS",
+        "Flexbox & Grid",
+        "GIT", 
+        "JavaScript",
+        "React",
+        "Redux Toolkit",
+        "Базовый TypeScript",
+        "Базовый Jest"
+      ],
+      "cv": "/",
+      "media": [
+        {"value": "GitHub", "link": "https://github.com/polyvit"}, 
+        {"value": "Telegram", "link": "https://t.me/polyvitlim"}, 
+        {"value": "WhatsApp", "link": "https://wa.me/79214465032"}
+      ]
+   },
+   "projects": [
+      {
+        "title": "Udon shop", 
+        "year": 2023,
+        "description":  "Многостраничный онлайн магазин ресторана удонов. Приложение использует mock данные, подготовленные собственноручно и размещенные в сервисе mockapi.io. Используется базовая типизация, проведены тесты с использованием Jest. В приложении осуществлена авторизация с помощью firebase", 
+        "short": "Многостраничный онлайн магазин ресторана удонов",
+        "stack": [
+          "HTML5, CSS3", 
+          "JavaScript",
+          "React",
+          "Redux Toolkit",
+          "Redux Persist",
+          "React Router v6",
+          "Firebase",
+          "TypeScript",
+          "Jest"
+        ],
+        "demo": "https://polyvit.github.io/Udon-shop/",
+        "repo": "https://github.com/polyvit/Udon-shop",
+        "plans": [
+          "Добавить личный кабинет"
+        ],
+        "images": [
+          "https://i.ibb.co/8681c4N/2023-11-01-17-29-38.png",
+          "https://i.ibb.co/52pQyxc/2023-11-01-17-38-36.png",
+          "https://i.ibb.co/kc3fhDT/2023-11-01-17-38-53.png",
+          "https://i.ibb.co/MfZ1Zgq/2023-11-01-17-40-05.png"
+        ]
+      },
+      {
+        "title": "Travel Suggester", 
+        "year": 2023,
+        "description":  "Одностраничное приложение планирования путешествий. Подбирайте отели, рестораны и достопримечательности в одном месте прямо на карте. Также встроена функция просмотра погоды. При первой загрузке локация определяется из местонахождения пользователя. На панели управления можно ввести искомый город, выбрать категорию для отображения и отфильтровать по рейтингу.", 
+        "short": "Одностраничное приложение планирования путешествий",
+        "stack": [
+          "HTML5, CSS3", 
+          "JavaScript",
+          "React",
+          "Redux Toolkit",
+          "Google Map React",
+          "react-icons",
+          "react-loader-spinner"
+        ],
+        "demo": "https://polyvit.github.io/Travel-suggester/",
+        "repo": "https://github.com/polyvit/Travel-suggester/",
+        "plans": [
+          "Функционал добавления в избранное"
+        ],
+        "images": [
+          "https://i.ibb.co/x2XzMsH/2023-11-01-17-22-29.png",
+          "https://i.ibb.co/QK0Dym6/2023-11-01-17-22-40.png"
+        ]
+      },
+      {
+        "title": "Sneakers shop", 
+        "year": 2023,
+        "description":  "Многостраничный онлайн магазин различных товаров. В боковой панели представлен список категорий, в каждую категорию можно перейти и отфильтровать товары по поисковой строке и цене. При переходе в карточку товара можно просмотреть подробную информацию и похожие товары. Добавление в корзину возможно только после выбора размера. Есть функция регистрации & залогирования и последующего изменения регистрационных данных. Мобильная версия отсутствует.", 
+        "short": "Многостраничный онлайн магазин различных товаров",
+        "stack": [
+          "HTML5, CSS3", 
+          "JavaScript",
+          "React",
+          "Redux Toolkit",
+          "RTK Query",
+          "React Router v6"
+        ],
+        "demo": "https://polyvit.github.io/Sneakers/",
+        "repo": "https://github.com/polyvit/Sneakers",
+        "plans": [
+          "Мобильная версия",
+          "Функционал добавления в избранное"
+        ],
+        "images": [
+          "https://i.ibb.co/7KmGHNF/2023-11-01-15-18-17.png",
+          "https://i.ibb.co/CVDyG57/2023-11-01-14-56-49.png",
+          "https://i.ibb.co/tBFfHdK/2023-11-01-14-59-14.png",
+          "https://i.ibb.co/d2MZq6V/2023-11-01-14-57-18.png"
+        ]
+      },
+      {
+        "title": "Flags App", 
+        "year": 2023,
+        "description":  "Многостраничное приложение флагов всех стран мира. Страны можно фильтровать по поиску и по региону (одновременно). При нажатии на карточку страны подгружаются расширенные данные о ней, в том числе сведения о соседях. Со страницы страны можно перейти на страницу каждого из ее соседей. Есть функция смены цветовой темы. Имеется мобильная версия. В процессе создания приложения был осуществлен переход с redux на redux Toolkit. Асинхронные запросы вынесены в кастомные хуки. Стилизация осуществлена с использованием Styled Components", 
+        "short": "Многостраничное приложение флагов всех стран мира",
+        "stack": [
+          "HTML5, CSS3", 
+          "JavaScript",
+          "React",
+          "Redux Toolkit",
+          "React Router v6",
+          "Styled Components",
+          "React Icons"
+        ],
+        "demo": "https://polyvit.github.io/Flags/",
+        "repo": "https://github.com/polyvit/Flags/tree/main",
+        "images": [
+          "https://i.ibb.co/WtM2zpn/2023-11-01-13-14-10.png",
+          "https://i.ibb.co/L56tBFZ/2023-11-01-13-14-32.png",
+          "https://i.ibb.co/TMzvyb5/2023-11-01-13-14-52.png",
+          "https://i.ibb.co/L1XzwKF/2023-11-01-13-15-03.png"
+        ]
+      },
+      {
+        "title": "Jokes App", 
+        "year": 2023,
+        "description":  "Многостраничное приложение с шутками. Вы можете добавлять свои шутки и комментировать их. Добавленные шутки сохраняются в базу данных firebase, там же сохраняются комментарии. Для организации запросов используется кастомный хук useHttp. Для состояния используется useReducer", 
+        "short": "Многостраничное приложение с шутками",
+        "stack": [
+          "HTML5, CSS3", 
+          "JavaScript",
+          "React",
+          "React Router v5",
+          "Firebase"
+        ],
+        "demo": "https://polyvit.github.io/Jokes/",
+        "repo": "https://github.com/polyvit/Jokes/tree/main",
+        "images": [
+          "https://i.ibb.co/qp0Jmck/2023-11-01-12-24-58.png",
+          "https://i.ibb.co/xJbFBZ8/2023-11-01-12-25-33.png",
+          "https://i.ibb.co/JsgCpDj/2023-11-01-12-25-41.png",
+          "https://i.ibb.co/TtmVMg6/2023-11-01-12-25-50.png"
+        ]
+      },
+      {
+        "title": "Yapona sushi", 
+        "year": 2023,
+        "description":  "Одностраничный онлайн магазин заказа суши, где вы можете выбрать нужное количество каждой из позиций в меню, добавить в корзину и сделать заказ. Используются mock данные, хранящиеся в базе данных firebase. Отправленные заказы также сохраняются в firebase. Для реализации состояния используется React Context", 
+        "short": "Одностраничный онлайн магазин заказа суши",
+        "stack": [
+          "HTML5, CSS3", 
+          "JavaScript",
+          "React",
+          "Firebase"
+        ],
+        "demo": "https://polyvit.github.io/Yapona/",
+        "repo": "https://github.com/polyvit/Yapona/tree/main",
+        "images": [
+          "https://i.ibb.co/dDPkkxW/2023-11-01-12-00-21.png",
+          "https://i.ibb.co/LNrm7pm/2023-11-01-12-00-05.png"
+        ]
+      },
+      {
+        "title": "Учет расходов", 
+        "year": 2023,
+        "description":  "Учебное приложение учета расходов с функциями добавления новых расходов и их фильтрацией по годам. В приложении используется локальное состояние и props drilling, имеется адаптивная версия", 
+        "short": "Учебное приложение учета расходов",
+        "stack": [
+          "HTML5, CSS3", 
+          "JavaScript",
+          "React"
+        ],
+        "demo": "https://polyvit.github.io/Costs/",
+        "repo": "https://github.com/polyvit/Costs",
+        "images": [
+          "https://i.ibb.co/dfb6Hcj/2023-11-01-10-50-02.png",
+          "https://i.ibb.co/NLH9C73/2023-11-01-10-50-35.png"
+        ]
+      },
+      {
+        "title": "Dashboard", 
+        "year": 2023,
+        "description":  "Простое реакт приложение, где вы можете отфильтровать список предложений о работе, используя бейджи (допускается фильтрация по нескольким искуемым фильтрам одновременно). Приложение использует mock данные. Состояние реализовано с помощью Redux. Внедрена простейшая проверка типов с использованием библиотеки prop-types", 
+        "short": "Простое реакт приложение, где вы можете отфильтровать список предложений о работе",
+        "stack": [
+          "HTML5, CSS3", 
+          "JavaScript",
+          "React",
+          "Redux",
+          "PropTypes"
+        ],
+        "demo": "https://polyvit.github.io/Dashboard/",
+        "repo": "https://github.com/polyvit/Dashboard",
+        "images": [
+          "https://i.ibb.co/02X12rb/2023-11-01-11-23-20.png"
+        ]
+      },
+      {
+        "title": "Приложение Кардио", 
+        "year": 2022,
+        "description":  "Учебное онлайн приложение тренировок, где вы можете записывать беговые и велосипедные тренировки, изменять их, а также сортировать по длительности, расстоянию и дате. При нажатии на тренировку в боковом списке происходит перемещение на карте. Тренировки сохраняются в Local Storage", 
+        "short": "Учебное онлайн приложение беговых и велосипедных тренировок",
+        "stack": [
+          "HTML5, CSS3", 
+          "JavaScript",
+          "Leaflet API"
+        ],
+        "demo": "https://polyvit.github.io/Cardio/",
+        "repo": "https://github.com/polyvit/Cardio",
+        "images": [
+          "https://i.ibb.co/ZT7MVJp/2023-10-31-21-53-45.png"
+        ]
+      },
+      {
+        "title": "Приложение Просто Банк", 
+        "year": 2022,
+        "description":  "Учебное приложение онлайн банка. Выполнен на нативном JS, используются только Mock данные. В приложении можно залогиниться, перевести деньги другому пользователю, запросить займ и закрыть счет. Также доступна сортировка транзакций. Через 5 минут после логина происходит выход из приложения", 
+        "short": "Учебное приложение онлайн банка. Выполнен на нативном JS с использованием mock данных",
+        "stack": [
+          "HTML5, CSS3", 
+          "JavaScript"
+        ],
+        "demo": "https://polyvit.github.io/JustBankApp/",
+        "repo": "https://github.com/polyvit/JustBankApp/tree/main",
+        "plans": [
+          "Доработка таймера"
+        ],
+        "images": [
+          "https://i.ibb.co/hKTgHFg/2023-10-31-17-30-10.png"
+        ]
+      },
+      {
+        "title": "Авторский список задач", 
+        "year": 2023,
+        "description":  "Авторское приложение списка задач. Задачи можно добавлять, изменять, удалять. Каждой задаче присваивается приоритет, также у каждой задачи есть 3 статуса: Ожидание, В процессе, Выполнено. Выполенные задачи автоматически фильтруются. Внесенные в список задачи сохраняются в локальное хранилище", 
+        "short": "Авторское приложение списка задач",
+        "stack": [
+          "HTML5, CSS3", 
+          "JavaScript"
+        ],
+        "demo": "https://polyvit.github.io/NewTasksList/",
+        "repo": "https://github.com/polyvit/NewTasksList",
+        "plans": [
+          "Мобильная версия"
+        ],
+        "images": [
+          "https://i.ibb.co/Phdq7w9/2023-10-31-22-38-42.png",
+          "https://i.ibb.co/VWTyMR7/2023-10-31-22-38-53.png",
+          "https://i.ibb.co/Prmv3jf/2023-10-31-22-39-06.png"
+        ]
+      },
+      {
+        "title": "Список задач", 
+        "year": 2022,
+        "description":  "Приложение списка задач. Есть функция переключения цветовой темы приложения (цветная, темная, светлая), фильтрация задач по факту выполнения. Внесенные задачи добавляются в локальное хранилище. Имеется адаптивная версия", 
+        "short": "Приложение списка задач с функцией переключения цветовой темы",
+        "stack": [
+          "HTML5, CSS3", 
+          "JavaScript",
+          "Bootstrap"
+        ],
+        "demo": "https://polyvit.github.io/TasksList/",
+        "repo": "https://github.com/polyvit/TasksList/tree/main",
+        "images": [
+          "https://i.ibb.co/PzDj6Bg/2023-10-31-22-29-49.png",
+          "https://i.ibb.co/rygPngt/2023-10-31-22-30-01.png",
+          "https://i.ibb.co/F8jw0Kr/2023-10-31-22-30-25.png"
+        ]
+      },
+      {
+        "title": "Лендинг Bring It Up", 
+        "year": 2022,
+        "description":  "Учебный проект на нативном JS в ООП стиле. Функционал реализован по списку задач, в том числе: слайдер, попап, аккордеон. С полным списком задач можно ознакомиться в файле README в гитхаб репозитории", 
+        "short": "Учебный проект на нативном JS в ООП стиле",
+        "stack": [
+          "HTML5, CSS3, SCSS/SASS", 
+          "GIT", 
+          "JavaScript",
+          "Babel",
+          "Gulp",
+          "Webpack",
+          "YouTube Player API"
+        ],
+        "demo": "https://polyvit.github.io/BringItUp/",
+        "repo": "https://github.com/polyvit/BringItUp/tree/main",
+        "plans": [
+          "Доработка по списку задач",
+          "Корректировка слайдера",
+          "Тестирование"
+        ],
+        "images": [
+          "https://i.ibb.co/sJnjZQ8/2023-10-30-16-58-59.png",
+          "https://i.ibb.co/fCScMSJ/2023-10-30-16-59-11.png",
+          "https://i.ibb.co/bB7S6r5/2023-10-30-16-59-58.png"
+        ]
+      },
+      {
+        "title": "Лендинг Картины.АРТ", 
+        "year": 2022,
+        "description":  "Учебный проект на нативном JS в классическом стиле. Функционал реализован по списку задач, в том числе: слайдер, попап, аккордеон. С полным списком задач можно ознакомиться в файле README в гитхаб репозитории", 
+        "short": "Учебный проект онлайн магазина по продаже картин на заказ. Выполнен на нативном JS в классическом стиле",
+        "stack": [
+          "HTML5, CSS3, LESS", 
+          "JavaScript",
+          "Babel",
+          "Gulp",
+          "Webpack"
+        ],
+        "demo": "https://polyvit.github.io/Pictures.ART/",
+        "repo": "https://github.com/polyvit/Pictures.ART",
+        "images": [
+          "https://i.ibb.co/wY4TyJC/2023-10-31-16-44-23.png",
+          "https://i.ibb.co/NVhrwTb/2023-10-31-16-44-33.png",
+          "https://i.ibb.co/FhGfkkm/2023-10-31-16-44-55.png",
+          "https://i.ibb.co/M73g8p9/2023-10-31-16-45-16.png"
+        ]
+      },
+      {
+        "title": "Лендинг IRVAS", 
+        "year": 2022,
+        "description":  "Учебный проект на нативном JS в классическом стиле. Функционал реализован по списку задач, в том числе: слайдер, попапы, таймер и калькулятор. С полным списком задач можно ознакомиться в файле README в гитхаб репозитории", 
+        "short": "Учебный проект онлайн магазина по продаже окон. Выполнен на нативном JS в классическом стиле",
+        "stack": [
+          "HTML5, CSS3", 
+          "JQuery", 
+          "JavaScript",
+          "Babel",
+          "Gulp",
+          "Webpack"
+        ],
+        "demo": "https://polyvit.github.io/IRVAS/",
+        "repo": "https://github.com/polyvit/IRVAS",
+        "images": [
+          "https://i.ibb.co/QdQS27S/2023-10-31-16-19-15.png",
+          "https://i.ibb.co/Px0KC7Q/2023-10-31-16-19-30.png",
+          "https://i.ibb.co/GFg8r2Q/2023-10-31-16-19-44.png",
+          "https://i.ibb.co/0Db0zLY/2023-10-31-16-19-55.png"
+        ]
+      },
+      {
+        "title": "Игра 'Угадай число'", 
+        "year": 2022,
+        "description":  "Учебный проект простой браузерной игры, где нужно угадать число от 1 до 20. Лучший результат сохраняется", 
+        "short": "Браузерная игра 'Угадай число'",
+        "stack": [
+          "HTML5, CSS3, SCSS/SASS", 
+          "JavaScript"
+        ],
+        "demo": "https://polyvit.github.io/Guess_number_game/",
+        "repo": "https://github.com/polyvit/Guess_number_game",
+        "images": [
+          "https://i.ibb.co/rx5QTTW/2023-10-31-14-27-26.png"
+        ]
+      },
+      {
+        "title": "Игра в кости", 
+        "year": 2022,
+        "description":  "Учебный проект простой браузерной игры в кости. Каждый игрок бросает кубик. Если выпадает число от 2 до 6, очки суммируются. Если выпадает 1, очки обнуляются и ход переходит к следующему игроку. Чтобы сохранить очки, необходимо нажать кнопку оставить. Тот игрок, который первым наберет 100 очков, побеждает.", 
+        "short": "Браузерная игра в кости",
+        "stack": [
+          "HTML5, CSS3", 
+          "JavaScript"
+        ],
+        "demo": "https://polyvit.github.io/Pig_game/",
+        "repo": "https://github.com/polyvit/Pig_game",
+        "images": [
+          "https://i.ibb.co/2jRW0sj/2023-10-31-22-10-35.png"
+        ]
+      },
+      {
+        "title": "Лендинг Просто Банк", 
+        "year": 2022,
+        "description":  "Посадочная страница проекта Просто Банк. Учебный проект, в ходе которого практиковался базовый JavaScript. В том числе такие техники как sticky navigation, link dimming, lazy loading и smooth scrolling", 
+        "short": "Посадочная страница проекта Просто Банк",
+        "stack": [
+          "HTML5, CSS3",  
+          "JavaScript"
+        ],
+        "demo": "https://polyvit.github.io/JustBankWebsite/",
+        "repo": "https://github.com/polyvit/JustBankWebsite/tree/main",
+        "images": [
+          "https://i.ibb.co/5n48Mxt/2023-10-31-17-20-48.png",
+          "https://i.ibb.co/wdZb8hb/2023-10-31-17-20-58.png",
+          "https://i.ibb.co/0nzBXdD/2023-10-31-17-21-06.png"
+        ]
+      },
+      {
+        "title": "Game site", 
+        "year": 2023,
+        "description":  "Верстка посадочной страницы игровой станции. Использованы анимации, а также Grid CSS и Flexbox.", 
+        "short": "Верстка посадочной страницы игровой станции",
+        "stack": [
+          "HTML5, CSS3, SASS",  
+          "Flexbox, Grid",
+          "Gulp"
+        ],
+        "demo": "https://polyvit.github.io/Game_page/",
+        "repo": "https://github.com/polyvit/Game_page",
+        "images": [
+          "https://i.ibb.co/F6LTHyq/2023-10-31-23-51-22.png",
+          "https://i.ibb.co/XkkMmsW/2023-10-31-23-51-41.png",
+          "https://i.ibb.co/1LyfxDj/2023-10-31-23-51-59.png"
+        ]
+      },
+      {
+        "title": "Balloons", 
+        "year": 2023,
+        "description":  "Верстка посадочной страницы туров путешествий на воздушном шаре. Использованы анимации.", 
+        "short": "Верстка посадочной страницы туров на воздушном шаре",
+        "stack": [
+          "HTML5, CSS3, SASS",  
+          "Gulp"
+        ],
+        "demo": "https://polyvit.github.io/Balloons/",
+        "repo": "https://github.com/polyvit/Balloons",
+        "images": [
+          "https://i.ibb.co/dmsr4Tx/2023-10-31-23-32-29.png",
+          "https://i.ibb.co/RD4Bxkx/2023-10-31-23-32-37.png",
+          "https://i.ibb.co/KXQDDV2/2023-10-31-23-33-03.png",
+          "https://i.ibb.co/rx69xTn/2023-10-31-23-33-15.png"
+        ]
+      }
+   ]
+}
+
+          

@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import Home from "./components/Home/Home";
+import SidebarLeft from "./components/SidebarLeft/SidebarLeft";
+import SidebarRight from "./components/SidebarRight/SidebarRight";
+import { loadData } from "./store/data-slice";
 
 function App() {
+  const dispatch = useDispatch();
+  const { status } = useSelector((state) => state.data);
+
+  useEffect(() => {
+    dispatch(loadData());
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      {status === "success" && (
+        <>
+          <SidebarLeft />
+          <Home />
+          <SidebarRight />
+        </>
+      )}
     </div>
   );
 }
