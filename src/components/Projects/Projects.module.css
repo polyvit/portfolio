@@ -9,9 +9,9 @@
   height: 100%;
   background-color: var(--color-bg-card);
 }
-.card img {
+/* .card img {
   object-fit: cover;
-}
+} */
 
 .info {
   padding: 15px 36px 16px 25px;

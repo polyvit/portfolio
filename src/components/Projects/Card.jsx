@@ -1,13 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Projects.module.css';
+import LazyImage from '../Image/LazyImage';
 
 const Card = ({id, images, title, short}) => {
   return (
     <div className={styles.card}>
-      <div>
-        <img width="100%" height="100%" src={images[0]} alt="" />
-      </div>
+      <LazyImage src={images[0]} id={id}/>
       <div className={styles.info}>
         <div style={{marginBottom: "10px"}}>
           <h3 className="base-title">{title}</h3>
@@ -15,7 +14,7 @@ const Card = ({id, images, title, short}) => {
             {short}
           </p>
         </div>
-        <Link to={`/projects/${id}`} className={styles.link}>Подробнее</Link>
+        <Link to={`/portfolio/projects/${id}`} className={styles.link}>Подробнее</Link>
       </div>
     </div>
   )
