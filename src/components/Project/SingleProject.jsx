@@ -6,7 +6,7 @@ import {RotatingLines} from  'react-loader-spinner';
 
 const SingleProject = () => {
   const {id} = useParams()
-  const project = useSelector(state => state.data.projects[Number(id)])
+  const project = useSelector(state => state.data.projects[id])
 
   window.scroll({top: 0, left: 0, behavior: 'smooth'})
 

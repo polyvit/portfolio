@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react'
 import styles from './Details.module.css';
 import Skills from '../SidebarLeft/Skills';
 
-
 const ProjectDetails = ({title, description, images, year, stack, demo, repo, plans = []}) => {
   const [currentImage, setCurrentImage] = useState()
 
@@ -39,8 +38,8 @@ const ProjectDetails = ({title, description, images, year, stack, demo, repo, pl
               </>
             )} 
             <div className={styles.buttons}>
-              <a href={demo} className="button" target="_blank">Демоверсия</a>
-              <a href={repo} className={`button ${styles.github}`} target="_blank">GitHub</a>
+              {demo !== "/" ? <a href={demo} className="button" target="_blank">Демоверсия</a>: null}
+              {repo !== "/" ? <a href={repo} className={`button ${styles.github}`} target="_blank">GitHub</a>: null}
             </div>
           </div>
         </div>

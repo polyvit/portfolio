@@ -14,3 +14,10 @@ export const getAge = (date) => {
   }
   return age;
 };
+
+export const structureProjectsData = (projects) => {
+  return Object.entries(projects).map(([key, value]) => ({
+    ...value,
+    id: key,
+  }));
+};

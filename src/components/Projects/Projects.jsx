@@ -2,9 +2,11 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import styles from './Projects.module.css';
 import Card from './Card';
+import { structureProjectsData } from '../../utils/common';
 
 const Projects = () => {
-  const projects = useSelector(state => state.data.projects);
+  const projects = useSelector(state => structureProjectsData(state.data.projects));
+  const filteredProjects = [...projects].sort((a, b) => Number(b.year) - Number(a.year))
   
   return (
     <div className='projects-section'>
@@ -12,8 +14,8 @@ const Projects = () => {
             <h2 className="h2-title">Мои проекты</h2>
           </div>
           <div className={styles.projects}>
-            {projects.map((pr, i) => (
-              <Card key={i} id={i} {...pr}/>
+            {filteredProjects.map(pr => (
+              <Card key={pr.id} {...pr}/>
             ))}
           </div>
         </div>
