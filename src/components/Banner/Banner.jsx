@@ -4,7 +4,7 @@ import styles from './Banner.module.css';
 import {AiFillGithub} from 'react-icons/ai';
 
 const Banner = () => {
-  const {banner} = useSelector(state => state.data.person)
+  const {banner, media} = useSelector(state => state.data.person)
   return (
     <div className={styles.banner}>
           <div className={styles.info}>
@@ -13,7 +13,7 @@ const Banner = () => {
               Junior <span className={styles.span}>Front - End</span> разработчика
             </h1>
             <p></p>
-            <a className={`button ${styles.button}`} target="_blank">
+            <a className={`button ${styles.button}`} target="_blank" href={media[0].link}>
               GitHub
               <AiFillGithub/>
             </a>
